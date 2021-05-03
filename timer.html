@@ -1,0 +1,31 @@
+<html>
+  <head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.techtricky.com/wp-content/jquery/jquery.jclock.js"></script>
+  <script type="text/javascript">
+    $(document).ready(
+        function() {  
+            $('#time-cont').append('<div class="time"></div>'); 
+          var options = {
+            format:'<span class=\"dt\">%A, %d %B %I:%M:%S %P</span>',
+            timeNotation: '12h',
+            am_pm: true,
+            fontFamily: 'Verdana, Times New Roman',
+            fontSize: '20px',
+            foreground: 'black',
+            background: 'yellow',
+            utc:true,
+            utc_offset: '5.5'
+          }
+            
+      $('#time-cont .time').jclock(options);
+       
+     });
+    </script>
+   
+   </head>
+   <body>
+
+    <div id="time-cont"></div>
+  </body>
+</html>
